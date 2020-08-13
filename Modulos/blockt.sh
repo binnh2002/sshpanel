@@ -38,22 +38,22 @@ fun_spn1 () {
 	helice
 	echo -e "\e[1DOk"
 }
-read -p "$(echo -e "\033[1;32mDESEJA REMOVER REGRAS FIREWALL? \033[1;33m[s/n]:\033[1;37m") " -e -i n resp
+read -p "$(echo -e "\033[1;32mMUỐN LOẠI BỎ QUY TẮC TƯỜNG LỬA? \033[1;33m[s/n]:\033[1;37m") " -e -i n resp
 if [[ "$resp" = 's' ]]; then
 	echo ""	
 	fun_spn1
 	echo ""
-	echo -e "\033[1;33mTORRENT LIBERADO !\033[0m"
+	echo -e "\033[1;33mLIÊN QUAN ĐẾN TORRENT !\033[0m"
 	echo ""
-	echo -e "\033[1;32mFIREWALL REMOVIDO COM SUCESSO !"
+	echo -e "\033[1;32mĐÃ BỎ QUA TƯỜNG LỪA THÀNH CÔNG !"
 	echo ""
 	if [[ -e /etc/openvpn/openvpn-status.log ]]; then
-		echo -e "\033[1;31m[\033[1;33m!\033[1;31m]\033[1;33m REINICIE O SISTEMA PRA CONCLUIR"
+		echo -e "\033[1;31m[\033[1;33m!\033[1;31m]\033[1;33m KHAI THÁC HỆ THỐNG ĐỂ HOÀN THIỆN"
 		echo ""
-		read -p "$(echo -e "\033[1;32mREINICIAR AGORA \033[1;31m? \033[1;33m[s/n]:\033[1;37m ")" -e -i s respost
+		read -p "$(echo -e "\033[1;32mKHỞI ĐỘNG NGAY \033[1;31m? \033[1;33m[s/n]:\033[1;37m ")" -e -i s respost
 		echo ""
 		if [[ "$respost" = 's' ]]; then
-			echo -ne "\033[1;31mReiniciando" 
+			echo -ne "\033[1;31mKhởi động lại" 
 			for i in $(seq 1 1 5); do
 				echo -n "."
 				sleep 01
@@ -69,18 +69,18 @@ else
 	menu
 fi
 else
-echo -e "\033[1;31m[\033[1;33m!\033[1;31m]\033[1;33m FUNCAO BETA ULTILIZE POR SUA CONTA EM RISCO"
+echo -e "\033[1;31m[\033[1;33m!\033[1;31m]\033[1;33m CHỨC NĂNG GIỮA TỐI ƯU RỦI RO CỦA CHÍNH BẠN"
 echo ""
-read -p "$(echo -ne "\033[1;32mDESEJA APLICAR REGRAS FIREWALL ? \033[1;33m[s/n]:\033[1;37m") " -e -i n resp
+read -p "$(echo -ne "\033[1;32mBẠN MUỐN ÁP DỤNG QUY TẮC CHỮA CHÁY ? \033[1;33m[s/n]:\033[1;37m") " -e -i n resp
 if [[ "$resp" = 's' ]]; then
 echo ""
-echo -ne "\033[1;33mPARA CONTINUAR CONFIRME SEU IP: \033[1;37m"; read -e -i $IP IP
+echo -ne "\033[1;33mĐỂ TIẾP TỤC XÁC NHẬN IP CỦA BẠN: \033[1;37m"; read -e -i $IP IP
 if [[ -z "$IP" ]];then
 echo ""
-echo -e "\033[1;31mIP invalido\033[1;32m"
+echo -e "\033[1;31mIP không hợp lệ\033[1;32m"
 sleep 1
 echo ""
-read -p "Digite seu IP: " IP
+read -p "Nhập IP của bạn: " IP
 fi
 echo ""
 sleep 1
@@ -152,15 +152,15 @@ fun_spn2 () {
 		done
 		tput cnorm
 	}
-	echo -ne "\033[1;32mAPLICANDO FIREWALL\033[1;32m.\033[1;33m.\033[1;31m. \033[1;32m"
+	echo -ne "\033[1;32mÁP DỤNG FIREWALL\033[1;32m.\033[1;33m.\033[1;31m. \033[1;32m"
 	helice
 	echo -e "\e[1DOk"
 }
 fun_spn2
 echo ""
-echo -e "\033[1;33mBLOQUEIO\033[1;37m TORRENT \033[1;33mAPLICADO !\033[0m"
+echo -e "\033[1;33mKHỐI\033[1;37m TORRENT \033[1;33mĐÃ ÁP DỤNG !\033[0m"
 echo ""
-echo -e "\033[1;32mFIREWALL APLICADO COM SUCESSO !"
+echo -e "\033[1;32mTƯỜNG LỬA ĐƯỢC ÁP DỤNG THÀNH CÔNG !"
 sleep 3
 menu
 else

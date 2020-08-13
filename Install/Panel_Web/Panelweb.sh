@@ -49,37 +49,37 @@ sudo rm -rf /var/www/html
 
 ##PANIL A INSTALAR
 panel_v10 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v10/Painel.sh > /dev/null 2>&1; chmod +x Painel.sh; ./Painel.sh
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v10/Painel.sh > /dev/null 2>&1; chmod +x Painel.sh; ./Painel.sh
 }
 panel_v10_2 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v10_2/install.sh > /dev/null 2>&1; chmod +x install.sh; ./install.sh
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v10_2/install.sh > /dev/null 2>&1; chmod +x install.sh; ./install.sh
 }
 panel_v11 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v11/Painelv11.sh > /dev/null 2>&1; chmod +x Painelv11.sh; ./Painelv11.sh
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v11/Painelv11.sh > /dev/null 2>&1; chmod +x Painelv11.sh; ./Painelv11.sh
 }
 panel_v11_2 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v11_2/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v11_2/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v12 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v12/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v12/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v15 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v15/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v15/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v15_2 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v15_2/ocspanel > /dev/null 2>&1; chmod +x ocspanel; ./ocspanel
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v15_2/ocspanel > /dev/null 2>&1; chmod +x ocspanel; ./ocspanel
 }
 panel_v20 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v20/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v20/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v20_mod () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v20_mod/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v20_mod/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v23 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v23/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v23/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v25 () {
-    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/panel_v25/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/panel_v25/install > /dev/null 2>&1; chmod +x install; ./install
 }
 
 ##PANIL REMOVE
@@ -124,7 +124,7 @@ echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mRedirigiendo "; fun_prog
 sleep 1
 echo -e " "
 sudo rm -rf /root/Panelweb.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/Install/Panel_Web/Panelweb.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/binnh2002/sshpanel/master/Install/Panel_Web/Panelweb.sh > /dev/null 2>&1
 chmod +x Panelweb.sh; ./Panelweb.sh
 }
 

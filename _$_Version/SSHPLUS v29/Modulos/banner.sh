@@ -13,16 +13,16 @@ chk=$(cat /etc/ssh/sshd_config | grep Banner)
 }
 echo -e "\E[44;1;37m             BANNER             \E[0m"
 echo ""
-echo -e "\033[1;31m[\033[1;36m1\033[1;31m]\033[1;37m • \033[1;33mADICIONAR BANNER"
+echo -e "\033[1;31m[\033[1;36m1\033[1;31m]\033[1;37m • \033[1;33mTHÊM BANNER"
 echo -e "\033[1;31m[\033[1;36m2\033[1;31m]\033[1;37m • \033[1;33mREMOVER BANNER"
-echo -e "\033[1;31m[\033[1;36m3\033[1;31m]\033[1;37m • \033[1;33mVOLTAR"
+echo -e "\033[1;31m[\033[1;36m3\033[1;31m]\033[1;37m • \033[1;33mQUAY LẠI"
 echo ""
-echo -ne "\033[1;32mOQUE DESEJA FAZER\033[1;31m ?\033[1;37m : "; read resp
+echo -ne "\033[1;32mBẠN MUỐN LÀM GÌ\033[1;31m ?\033[1;37m : "; read resp
 if [[ "$resp" = "1" ]]; then
 echo ""
-echo -ne "\033[1;32mQUAL MENSAGEM DESEJA EXIBIR\033[1;31m ?\033[1;37m : "; read msg1
+echo -ne "\033[1;32mTHÔNG ĐIỆP NÀO BẠN MUỐN HIỂN THỊ\033[1;31m ?\033[1;37m : "; read msg1
 if [[ -z "$msg1" ]]; then
-	echo -e "\n\033[1;31mCampo vazio ou invalido !\033[0m"
+	echo -e "\n\033[1;31mTrường trống hoặc không hợp lệ !\033[0m"
 	sleep 2
 	banner
 fi
@@ -42,18 +42,18 @@ elif [[ "$opc" = "4" ]] || [[ "$opc" = "04" ]]; then
 _size='1'
 fi
 
-echo -e "\n\033[1;31m[\033[1;36m01\033[1;31m]\033[1;33m AZUL"
-echo -e "\033[1;31m[\033[1;36m02\033[1;31m]\033[1;33m VERDE"
-echo -e "\033[1;31m[\033[1;36m03\033[1;31m]\033[1;33m VERMELHO"
-echo -e "\033[1;31m[\033[1;36m04\033[1;31m]\033[1;33m AMARELO"
-echo -e "\033[1;31m[\033[1;36m05\033[1;31m]\033[1;33m ROSA"
+echo -e "\n\033[1;31m[\033[1;36m01\033[1;31m]\033[1;33m MÀU XANH DA TRỜI"
+echo -e "\033[1;31m[\033[1;36m02\033[1;31m]\033[1;33m MÀU XANH LÁ"
+echo -e "\033[1;31m[\033[1;36m03\033[1;31m]\033[1;33m ĐỎ"
+echo -e "\033[1;31m[\033[1;36m04\033[1;31m]\033[1;33m MÀU VÀNG"
+echo -e "\033[1;31m[\033[1;36m05\033[1;31m]\033[1;33m Hồng"
 echo -e "\033[1;31m[\033[1;36m06\033[1;31m]\033[1;33m CYANO"
-echo -e "\033[1;31m[\033[1;36m07\033[1;31m]\033[1;33m LARANJA"
-echo -e "\033[1;31m[\033[1;36m08\033[1;31m]\033[1;33m ROXO"
-echo -e "\033[1;31m[\033[1;36m09\033[1;31m]\033[1;33m PRETO"
-echo -e "\033[1;31m[\033[1;36m10\033[1;31m]\033[1;33m SEM COR"
+echo -e "\033[1;31m[\033[1;36m07\033[1;31m]\033[1;33m CAM"
+echo -e "\033[1;31m[\033[1;36m08\033[1;31m]\033[1;33m MÀU TÍM"
+echo -e "\033[1;31m[\033[1;36m09\033[1;31m]\033[1;33m ĐEN"
+echo -e "\033[1;31m[\033[1;36m10\033[1;31m]\033[1;33m KHÔNG CÓ MÀU SẮC"
 echo ""
-echo -ne "\033[1;32mQUAL A COR\033[1;31m ?\033[1;37m : "; read ban_cor
+echo -ne "\033[1;32mMÀU SẮC LÀ GÌ\033[1;31m ?\033[1;37m : "; read ban_cor
 if [[ "$ban_cor" = "1" ]] || [[ "$ban_cor" = "01" ]]; then
 echo "<h$_size><font color='blue'>$msg1" >> $local
 elif [[ "$ban_cor" = "2" ]] || [[ "$ban_cor" = "02" ]]; then
@@ -79,7 +79,7 @@ echo -e "\n\033[1;32mBANNER DEFINIDO !\033[0m"
 sleep 2
 menu
 else
-echo -e "\n\033[1;31mOpcao invalida !\033[0m"
+echo -e "\n\033[1;31mTùy chọn không hợp lệ !\033[0m"
 	sleep 2
 	banner
 fi
@@ -96,7 +96,7 @@ elif [[ "$resp" = "2" ]]; then
 elif [[ "$resp" = "3" ]]; then
 	menu
 else
-	echo -e "\n\033[1;31mOpcao invalida !\033[0m"
+	echo -e "\n\033[1;31mTùy chọn không hợp lệ !\033[0m"
 	sleep 2
 	banner
 fi
